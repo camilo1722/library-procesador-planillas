@@ -75,7 +75,8 @@ Sigue estos pasos para configurar y ejecutar el proyecto en tu entorno local:
         mvn test
   ```
 
-![image](https://github.com/camilo1722/library-procesador-planillas/assets/131456103/5c2a60bd-ee2f-4150-9d8b-917f3e0afbb0)
+![image](https://github.com/camilo1722/library-procesador-planillas/assets/131456103/7ead516a-0520-49fc-9419-75ce7a87bc6b)
+
 
 
  
