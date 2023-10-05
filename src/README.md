@@ -52,24 +52,34 @@ Sigue estos pasos para configurar y ejecutar el proyecto en tu entorno local:
    ```shell
    git clone https://github.com/camilo1722/library-procesador-planillas
 
-2. **Compilar el proyecto:**
+2. **Realizar el empaquetado del proyecto:**
 
-   Navega al directorio raíz del proyecto y ejecuta el siguiente comando para compilar el proyecto utilizando Maven:
+   Navega al directorio raíz del proyecto y ejecuta el siguiente comando para empaquetar el proyecto utilizando Maven:
   ```shell
-   mvn clean install
+   mvn clean package
    ```
 
-4. **Ejecutar la Aplicación:**
-    Una vez que la compilación haya finalizado con éxito, puedes ejecutar la aplicación con el siguiente comando:
+3. **Instalacion de la liberia:**
+    Una vez que el empaquetado haya finalizado con éxito, y se valide la creación de el archivo `planillas-1.0-SNAPSHOT.jar`. se debe realizar la intlación de esta libreria en la maquina, nodo o servidor en donde se requiera:
   ```shell
-  java -jar target/tu-proyecto-1.0.0.jar
+  mvn install
   ```
 
 4. **Acceder a la Aplicación:**
-  La aplicación estará disponible en http://localhost:8081. Abre tu navegador web y navega a esta dirección para interactuar con la aplicación.
+  Una vez creado la instalación se puede importar la libreria tal y como se suele hacer con cualquier otra libreria maven
 
-5. **Servicio expuestos**
-  Pudes acceder a el catalogo de servicio con el siguiente enlace http://localhost:8081/swagger-ui/index.html
+4. **Ejecución Test unitarios (Opcional)**
+   En la raiz del proyecto se debe ejecutar el siguiente comando para validar la correcta ejecución de los test
+
+ ```shell
+        mvn test
+  ```
+
+![image](https://github.com/camilo1722/library-procesador-planillas/assets/131456103/5c2a60bd-ee2f-4150-9d8b-917f3e0afbb0)
+
+
+ 
+   
 
 
 
