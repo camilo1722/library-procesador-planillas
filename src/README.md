@@ -62,13 +62,13 @@ Sigue estos pasos para configurar y ejecutar el proyecto en tu entorno local:
 3. **Instalacion de la liberia:**
     Una vez que el empaquetado haya finalizado con éxito, y se valide la creación de el archivo `planillas-1.0-SNAPSHOT.jar`. se debe realizar la intlación de esta libreria en la maquina, nodo o servidor en donde se requiera:
   ```shell
-  mvn install
+  mvn install:install-file -Dfile=target/planillas-1.0-SNAPSHOT.jar -DgroupId=org.solutions.xara -DartifactId=planillas -Dversion=1.0-SNAPSHOT -Dpackaging=jar
   ```
 
-4. **Acceder a la Aplicación:**
+4. **Acceder a la libreria:**
   Una vez creado la instalación se puede importar la libreria tal y como se suele hacer con cualquier otra libreria maven
 
-4. **Ejecución Test unitarios (Opcional)**
+5. **Ejecución Test unitarios (Opcional)**
    En la raiz del proyecto se debe ejecutar el siguiente comando para validar la correcta ejecución de los test
 
  ```shell
